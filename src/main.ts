@@ -25,6 +25,6 @@ async function bootstrap() {
   SwaggerModule.setup('/swagger', app, document);
 
   //a listen port itt módosítható
-  await app.listen(3000);
+  await app.listen(3001);
 }
 bootstrap();

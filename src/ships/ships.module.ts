@@ -6,7 +6,7 @@ import { Ship } from './entities/ship.entity';
 
 //az adatbázis műveletekhez a TypeOrmModule.forFeature([])-t importáljuk, aminek a paramétere az entity (vagy entities)
 @Module({
-  imports: [TypeOrmModule.forFeature([Ship])],
+  //imports: [TypeOrmModule.forFeature([Ship])],
   controllers: [ShipsController],
   providers: [ShipsService]
 })

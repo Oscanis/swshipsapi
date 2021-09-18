@@ -12,9 +12,9 @@ import * as fakedb from '../fake-db.json';
 @Injectable()
 export class ShipsService {
 
-  /*
   // !!! FAKE JSON DB megoldás, vagy ezt a részt, vagy a Postgres részt ki kell kommentelni
-  
+  // valamint az app.module.ts-ből és a ships.module.ts-ből is a TypeOrmModule.forRoot és .forService részeket
+
   //fake DB teszteléshez, később ide jön az adatbázis kezelő réteg
   private ships: Ship[] = fakedb;
 
@@ -61,8 +61,8 @@ export class ShipsService {
   }
 
   // !!! FAKE JSON DB rész vége
-*/  
 
+/*
   // !!! POSTGRES megoldás, vagy ezt a részt, vagy a Fake Json Db részt ki kell kommentelni
 
   //a constructorban injektálunk/létrehozunk egy repository-t az entity alapján, ezzel tudunk adatbázisműveleteket végrehajtani
@@ -104,6 +104,6 @@ export class ShipsService {
     let ship = await this.findOne(id);
     return await this.shipRepository.remove(ship);
   }
-
+*/
   //ezen kívül lehet építeni custom sql-hez hasonló query-ket a repository.createQueryBuilder-el, ezt majd tanulmányozni kell
 }
