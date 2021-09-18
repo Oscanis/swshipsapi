@@ -23,7 +23,7 @@ export class ShipsController {
   @ApiOkResponse({type: Ship, isArray: true})
   @ApiQuery({name: 'name', required: false})
   @Get()
-  findAll(): Ship[] {
+  findAll() {
     return this.shipsService.findAll();
   }
   
@@ -34,7 +34,7 @@ export class ShipsController {
   @ApiOkResponse({type: Ship})
   @ApiNotFoundResponse()
   @Get(':id')
-  findOne(@Param('id', ParseIntPipe) id: number): Ship {
+  findOne(@Param('id', ParseIntPipe) id: number) {
     return this.shipsService.findOne(id);
   }
 
