@@ -27,4 +27,6 @@ export class CreateShipDto {
     MGLT: string;
     @ApiProperty()
     starship_class: string;
+    @ApiProperty()
+    picurl: string;
 }

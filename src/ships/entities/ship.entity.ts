@@ -62,4 +62,8 @@ export class Ship {
     @Column()
     @ApiProperty()
     starship_class: string;
+
+    @Column()
+    @ApiProperty()
+    picurl: string;
 }

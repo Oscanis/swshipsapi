@@ -29,4 +29,6 @@ export class UpdateShipDto extends PartialType(CreateShipDto) {
     MGLT: string;
     @ApiProperty()
     starship_class: string;
+    @ApiProperty()
+    picurl: string;
 }
